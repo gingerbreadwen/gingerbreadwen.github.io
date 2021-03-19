@@ -39,7 +39,7 @@ test_data = datasets.FashionMNIST(
 
 ## 自定义数据集
 
-自定义的数据集包含整个数据
+自定义的数据集包含整个数据，需要实现以下函数
 
 - len返回数据的长度
 - getitem索引数据
@@ -47,9 +47,9 @@ test_data = datasets.FashionMNIST(
 
 ## 数据加载器
 
-- minibatches
-- reshuffle
-- multiproccessing 加速数据检索
+- minibatches 小批量读取
+- reshuffle 重新洗牌防止过拟合
+- multiproccessing retrival加速数据检索
 
 ```python
 # Display image and label.
