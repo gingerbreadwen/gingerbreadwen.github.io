@@ -2,15 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/categories/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/categories/pytorch%E6%A1%86%E6%9E%B6/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/pytorch-data/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/tags/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/tags/%E5%85%A5%E9%97%A8/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/tags/%E6%95%B0%E6%8D%AE%E8%BE%93%E5%85%A5/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://example.org/tags/%E6%A1%86%E6%9E%B6/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/pytorch%E6%A1%86%E6%9E%B6/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/pytorch-data/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E5%85%A5%E9%97%A8/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E6%95%B0%E6%8D%AE%E8%BE%93%E5%85%A5/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E6%A1%86%E6%9E%B6/</loc><lastmod>2021-03-20T09:49:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/pytorch/</loc><lastmod>2021-03-19T13:09:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/tags/content/</loc><lastmod>2021-03-19T07:29:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/tags/installation/</loc><lastmod>2021-03-19T07:29:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
