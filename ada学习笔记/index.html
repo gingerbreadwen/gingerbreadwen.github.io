@@ -5,42 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Pytorch深度学习框架入门-数据输入 - GGS，DDU！</title><meta name="Description" content="pytorch的数据操作"><meta property="og:title" content="Pytorch深度学习框架入门-数据输入" />
-<meta property="og:description" content="pytorch的数据操作" />
+        <title>ADA学习笔记-基本概念框架 - GGS，DDU！</title><meta name="Description" content="好好学习，天天向上"><meta property="og:title" content="ADA学习笔记-基本概念框架" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/pytorch-data/" /><meta property="og:image" content="http://example.org/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-19T11:37:23&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-20T09:49:16&#43;08:00" />
+<meta property="og:url" content="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><meta property="og:image" content="http://example.org/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-27T01:34:17&#43;08:00" />
+<meta property="article:modified_time" content="2021-04-27T01:34:17&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://example.org/"/>
 
-<meta name="twitter:title" content="Pytorch深度学习框架入门-数据输入"/>
-<meta name="twitter:description" content="pytorch的数据操作"/>
+<meta name="twitter:title" content="ADA学习笔记-基本概念框架"/>
+<meta name="twitter:description" content=""/>
 <meta name="application-name" content="GGS，DDU！">
 <meta name="apple-mobile-web-app-title" content="GGS，DDU！"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/pytorch-data/" /><link rel="prev" href="http://example.org/pytorch/" /><link rel="next" href="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><link rel="prev" href="http://example.org/pytorch-data/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Pytorch深度学习框架入门-数据输入",
+        "headline": "ADA学习笔记-基本概念框架",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/example.org\/pytorch-data\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "http:\/\/example.org\/pytorch-data\/featured-image.jpg",
-                            "width":  468 ,
-                            "height":  513 
-                        }],"genre": "posts","keywords": "入门, 框架, 数据输入","wordcount":  334 ,
-        "url": "http:\/\/example.org\/pytorch-data\/","datePublished": "2021-03-19T11:37:23+08:00","dateModified": "2021-03-20T09:49:16+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "http:\/\/example.org\/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/"
+        },"genre": "posts","wordcount":  157 ,
+        "url": "http:\/\/example.org\/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/","datePublished": "2021-04-27T01:34:17+08:00","dateModified": "2021-04-27T01:34:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "Gingerbread"
-            },"description": "pytorch的数据操作"
+            },"description": ""
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -123,149 +118,80 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Pytorch深度学习框架入门-数据输入</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Gingerbread</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/pytorch%E6%A1%86%E6%9E%B6/"><i class="far fa-folder fa-fw"></i>pytorch框架</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-19">2021-03-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 334 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/pytorch-data/" class="leancloud_visitors" data-flag-title="Pytorch深度学习框架入门-数据输入">
+        </div><article class="page single"><h1 class="single-title animated flipInX">ADA学习笔记-基本概念框架</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Gingerbread</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/ada%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw"></i>ADA笔记</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-27">2021-04-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 157 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="leancloud_visitors" data-flag-title="ADA学习笔记-基本概念框架">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/pytorch-data/featured-image.jpg"
-        data-srcset="/pytorch-data/featured-image.jpg, /pytorch-data/featured-image.jpg 1.5x, /pytorch-data/featured-image.jpg 2x"
-        data-sizes="auto"
-        alt="/pytorch-data/featured-image.jpg"
-        title="pytorch的数据操作" /></div><div class="details toc" id="toc-static"  kept="true">
+        </div><div class="details toc" id="toc-static"  kept="true">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#数据集加载">数据集加载</a></li>
-    <li><a href="#自定义数据集">自定义数据集</a></li>
-    <li><a href="#数据加载器">数据加载器</a></li>
+    <li><a href="#引言introduction">引言(Introduction)</a>
+      <ul>
+        <li><a href="#术语">术语</a></li>
+      </ul>
+    </li>
+    <li><a href="#分而治之divide-and-conquer">分而治之(Divide-and-Conquer)</a></li>
+    <li><a href="#动态规划dynamic-programming">动态规划(Dynamic Programming)</a></li>
+    <li><a href="#贪心算法greedy-algorithms">贪心算法(Greedy Algorithms)</a></li>
+    <li><a href="#图算法graph-algorithms">图算法(Graph Algorithms)</a></li>
+    <li><a href="#平摊分析amortized-analysis">平摊分析(Amortized Analysis)</a></li>
+    <li><a href="#np完全np-completeness"><strong>NP完全</strong>(NP Completeness)</a></li>
+    <li><a href="#近似算法approximation-algorithms">近似算法(Approximation Algorithms)</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>简要介绍pytorch的数据读取与加载</p>
-<h1 id="数据输入">数据输入</h1>
-<h2 id="数据集加载">数据集加载</h2>
-<p>PyTorch提供的原始数据输入方法: <code>torch.utils.data.DataLoader</code> 和 <code>torch.utils.data.Dataset</code>。</p>
+            </div><div class="content" id="content"><p>课程ADA的笔记</p>
+<h1 id="算法设计">算法设计</h1>
+<h2 id="引言introduction">引言(Introduction)</h2>
+<h3 id="术语">术语</h3>
 <ul>
-<li>torch.utils.data.DataLoader</li>
-<li>torch.utils.data.Dataset</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
-<span class="kn">from</span> <span class="nn">torchvision</span> <span class="kn">import</span> <span class="n">datasets</span>
-<span class="kn">from</span> <span class="nn">torchvision.transforms</span> <span class="kn">import</span> <span class="n">ToTensor</span><span class="p">,</span> <span class="n">Lambda</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-
-<span class="n">training_data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">FashionMNIST</span><span class="p">(</span>
-    <span class="n">root</span><span class="o">=</span><span class="s2">&#34;data&#34;</span><span class="p">,</span>  <span class="c1"># 路径</span>
-    <span class="n">train</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>		<span class="c1"># 加载的训练集</span>
-    <span class="n">download</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>	<span class="c1"># 如果路径不包含数据集，则从网络下载数据集</span>
-    <span class="n">transform</span><span class="o">=</span><span class="n">ToTensor</span><span class="p">()</span> <span class="c1"># 数据集内容转化为张量</span>
-<span class="p">)</span>
-
-<span class="n">test_data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">FashionMNIST</span><span class="p">(</span>
-    <span class="n">root</span><span class="o">=</span><span class="s2">&#34;data&#34;</span><span class="p">,</span>
-    <span class="n">train</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
-    <span class="n">download</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
-    <span class="n">transform</span><span class="o">=</span><span class="n">ToTensor</span><span class="p">()</span>
-<span class="p">)</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="自定义数据集">自定义数据集</h2>
-<p>自定义的数据集包含整个数据，需要实现以下函数</p>
+<li>问题</li>
+<li>个例</li>
+<li>计算模型
 <ul>
-<li>len返回数据的长度</li>
-<li>getitem索引数据</li>
-<li>init读取数据</li>
+<li>Each problem must have its rule</li>
+<li>Computation model= rule</li>
+<li>The problems with different rules have different hardness levels</li>
 </ul>
-<h2 id="数据加载器">数据加载器</h2>
-<ul>
-<li>minibatches 小批量读取</li>
-<li>reshuffle 重新洗牌防止过拟合</li>
-<li>multiproccessing retrival加速数据检索</li>
+</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Display image and label.</span>
-<span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">train_dataloader</span><span class="p">))</span> <span class="c1">#使得dataloader由可迭代变为迭代器，并获取特征与标签</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Feature batch shape: {train_features.size()}&#34;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Labels batch shape: {train_labels.size()}&#34;</span><span class="p">)</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">train_features</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
-<span class="n">label</span> <span class="o">=</span> <span class="n">train_labels</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&#34;gray&#34;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;Label: {label}&#34;</span><span class="p">)</span>
-</code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer" id="post-footer">
+<h2 id="分而治之divide-and-conquer">分而治之(Divide-and-Conquer)</h2>
+<h2 id="动态规划dynamic-programming">动态规划(Dynamic Programming)</h2>
+<h2 id="贪心算法greedy-algorithms">贪心算法(Greedy Algorithms)</h2>
+<h2 id="图算法graph-algorithms">图算法(Graph Algorithms)</h2>
+<h2 id="平摊分析amortized-analysis">平摊分析(Amortized Analysis)</h2>
+<h2 id="np完全np-completeness"><strong>NP完全</strong>(NP Completeness)</h2>
+<h2 id="近似算法approximation-algorithms">近似算法(Approximation Algorithms)</h2></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-03-20</span>
+                <span>更新于 2021-04-27</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/pytorch-data/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入" data-hashtags="入门,框架,数据输入"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/pytorch-data/" data-hashtag="入门"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="http://example.org/pytorch-data/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入" data-description="pytorch的数据操作"><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入" data-description="pytorch的数据操作"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/pytorch-data/" data-title="Pytorch深度学习框架入门-数据输入"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="ADA学习笔记-基本概念框架"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%85%A5%E9%97%A8/">入门</a>,&nbsp;<a href="/tags/%E6%A1%86%E6%9E%B6/">框架</a>,&nbsp;<a href="/tags/%E6%95%B0%E6%8D%AE%E8%BE%93%E5%85%A5/">数据输入</a></section>
+        <section class="post-tags"></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/pytorch/" class="prev" rel="prev" title="Pytorch深度学习框架入门-张量"><i class="fas fa-angle-left fa-fw"></i>Pytorch深度学习框架入门-张量</a>
-            <a href="/ada%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="next" rel="next" title="ADA学习笔记-基本概念框架">ADA学习笔记-基本概念框架<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/pytorch-data/" class="prev" rel="prev" title="Pytorch深度学习框架入门-数据输入"><i class="fas fa-angle-left fa-fw"></i>Pytorch深度学习框架入门-数据输入</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
